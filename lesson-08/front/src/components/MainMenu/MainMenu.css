@@ -1,22 +1,26 @@
 .main-menu {
-  
+  &__list{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin: 30px 60px;
+    list-style: none;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 85px;
+  }
+
+  &__link {
+    color: #2c2c2c;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 23px;
+  }
 }
 
-.main-menu__list{
-  display: flex;
-  align-items: center;
-  margin: 0;
-  margin: 30px 60px;
-  list-style: none;
-}
 
-.main-menu__item:not(:last-child) {
-  margin-right: 85px;
-}
 
-.main-menu__link {
-  color: #2c2c2c;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 23px;
-}
+
+
+
