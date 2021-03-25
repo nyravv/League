@@ -10,8 +10,10 @@ const b = block('main-menu')
 export const MainMenu: React.FC<Props> = () => {
   return (
     <nav className={b()}>
-      <a href="/catalog">Каталог</a>
-      <a href="/ref">Справочники</a>
+      <ul className={b('list')}>
+        <li className={b('item')}><a className={b('link')} href="/catalog">Каталог</a></li>
+        <li className={b('item')}><a className={b('link')} href="/ref">Справочники</a></li>
+        </ul>
     </nav>
   )
 }
